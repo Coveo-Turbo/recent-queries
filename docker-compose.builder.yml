@@ -1,0 +1,27 @@
+version: '2'
+services:
+  node:
+    image: node:10-alpine
+    volumes:
+      - nodemodules_component:/usr/src/app/node_modules
+      - .:/usr/src/app/
+    working_dir: /usr/src/app/
+  install:
+    extends:
+      service: node
+    command: npm i
+  build:
+    extends:
+      service: node
+    command: npm run build
+  pack:
+    extends:
+      service: node
+    command: npm pack
+  enter:
+    extends:
+      service: node
+    command: sh
+volumes:
+  nodemodules_component:
+    external: true
