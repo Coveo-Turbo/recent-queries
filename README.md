@@ -82,6 +82,7 @@ The following options can be configured:
 The Recent Queries supports the follow locale string ids:
 
 `Recent Queries` - Label to show above the recent queries in Omnibox mode
+
 `Suggested Search Results` - Label to show above the query suggest in Omnibox mode
 
 ## Contribute
