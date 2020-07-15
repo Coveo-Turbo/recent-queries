@@ -1,32 +1,33 @@
 {
-    "name": "@coveops/turbo-core",
-    "version": "1.1.1",
-    "description": "A utility library for turbo-charged component development",
+    "name": "@coveops/recent-queries",
+    "version": "1.0.0",
+    "description": "A component showing recent queries performed by the user",
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "coveops build TurboCore --template typescript",
-        "serve": "coveops serve",
+        "build": "coveops build RecentQueries --template typescript",
+        "serve": "npm run build && cp sandbox/*.html dist && coveops serve --path dist",
         "precompile": "npm run build"
     },
     "author": "",
     "license": "Apache-2.0",
-    "homepage": "https://github.com/Coveo-Turbo/turbo-core#readme",
+    "homepage": "https://github.com/Coveo-Turbo/recent-queries#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Coveo-Turbo/turbo-core.git"
+        "url": "git+https://github.com/Coveo-Turbo/recent-queries.git"
     },
     "bugs": {
-        "url": "https://github.com/Coveo-Turbo/turbo-core/issues"
+        "url": "https://github.com/Coveo-Turbo/recent-queries/issues"
     },
     "devDependencies": {
-        "@coveops/cli": "^0.4.0"
+        "@coveops/cli": "^0.8.1"
     },
     "types": "dist/index.d.ts",
     "files": [
         "dist"
     ],
     "dependencies": {
-        "coveo-search-ui": "^2.8959.10"
+        "@coveops/turbo-core": "^1.1.1",
+        "coveo-search-ui": "^2.9159.8"
     }
 }

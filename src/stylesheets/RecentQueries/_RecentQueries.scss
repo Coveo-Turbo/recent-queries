@@ -1,0 +1,43 @@
+.CoveoSearchbox .coveo-magicbox-suggestions {
+
+    .recent-queries-disabled-line {
+        color: slategrey;
+        font-weight: normal;
+        pointer-events: none;
+    }
+}
+
+.CoveoRecentQueries {
+    position: absolute;
+    margin-top: 50px;
+
+    .queries-history-list {
+        margin: 0;
+        padding: 2px 0 0 0;
+        display: flex;
+
+        li {
+            display: flex;
+            margin-right: 10px;
+            background-color: #0059b3;
+            color: white;
+            border-radius: 3px;
+            padding: 2px 5px;
+
+            .queries-history-item-caption:hover {
+                color: orange;
+                cursor: pointer;
+            }
+
+            .queries-history-remove:hover {
+                color: orange;
+                cursor: pointer;
+            }
+
+            .queries-history-remove {
+                margin-left: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}
